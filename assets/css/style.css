@@ -35,7 +35,7 @@ h1 {
   font-weight: 600;
 }
 .header-bg {
-  background-image: url("../img/header-bg-compressed.jpg");
+  background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 1000px;
