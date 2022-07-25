@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing : border-box;
+  box-sizing: border-box;  
+}
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  --light-background: #d4d8d9;
+  --heading-color: #ad6c12;
+  --circlebg: #2a3b40;
+}
+h1 {
+  font-family: 'Lobster', cursive;
+}
+
+/*-------------------- Header Section Starts Here --------------------*/
+.navbar-nav {
+  margin-left: auto;
+}
+.navbar {
+  padding-top: 1.5rem;
+}
+.navbar-brand,
+.nav-link {
+  font-size: 20px;
+  font-weight: 600;
+}
+.header-bg {
+  background-image: url("../img/header-bg-compressed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1000px;
+  position: relative;
+}
+.header_text {
+  background-color: #dcddddb8;
+  color: #000;
+  position: absolute;
+  top: calc(60% - 250px);
+  left: calc(50% - 300px);
+  text-align: center;
+  padding: 100px;
+}
+.header_text h1 {
+  font-size: 60px;
+}
+.header_text h2 {
+  font-size: 62px;
+  color: var(--heading-color);
+  margin-bottom: 30px;
+}
+.header_text a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  background-color: #fff;
+  padding: 8px 12px;
+}
+@media screen and (max-width: 767px) {
+  .header_text {
+    left: calc(50% - 275px);
+    padding: 75px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .header_text {
+    left: calc(50% - 229px);
+    padding: 48px;
+  }
+  .header_text h1 {
+    font-size: 56px;
+  }
+  .header_text h2 {
+    font-size: 56px;
+    margin-bottom: 28px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header_text {
+    left: calc(50% - 157px);
+    padding: 28px;
+  }
+  .header_text h1 {
+    font-size: 42px;
+  }
+  .header_text h2 {
+    font-size: 40px;
+  }
+}
+/*-------------------- Header Section Ends Here --------------------*/
+
+/*-------------------- Traditional Section Starts Here --------------------*/
+.traditional {
+  background-color: var(--circlebg);
+}
+.traditional-text h4 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.traditional-text p {
+  color: #636f73;
+  text-align: justify;
+}
+.traditional-img img {
+  width: 100%;
+}
+/*-------------------- Traditional Section Ends Here --------------------*/
+
+/*-------------------- Traditional Cards Section Starts Here --------------------*/
+.traditional-cards {
+  background-color:  var(--light-background);
+}
+.tradCard-circle {
+  background-color: var(--circlebg);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 8px;
+}
+.tradCard h5 {
+  margin-bottom: 15px;
+}
+/*-------------------- Traditional Cards Section Ends Here --------------------*/
+
+/*-------------------- Indian Plate Section Starts Here --------------------*/
+.Indian-Plates {
+  background-image: url(../img/indian-plate.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.plates-img {
+  width: 100%;
+  min-height: 100%;
+}
+.plates-heading {
+  background-color: #faf7f1bf;
+}
+.plates-bg {
+  background-color: #ffffffc9;
+}
+.plates-heading h2 {
+  color: var(--heading-color);
+}
+/*-------------------- Indian Plate Section Ends Here --------------------*/
+
+/*-------------------- Traditional Cuisine Section Starts Here --------------------*/
+.traditional-cuisine {
+  background-color: #d4d8d9;
+  position: relative;
+  min-height: 400px;
+}
+.cuisine-text h4 {
+  font-weight: 600;
+  color: var(--circlebg);
+  margin-bottom: 20px;
+}
+.cuisine-text p {
+  color: var(--circlebg);
+  width: 60%;
+  margin: auto;
+}
+.cuisine-img-left img {
+  position: absolute;
+  left: 0%;
+}
+.cuisine-img-right img {
+  position: absolute;
+  right: 0%;
+}
+.cuisine-list li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+  font-weight: 700;
+}
+.cuisine-list ul {
+  padding-left: 0px;
+}
+@media screen and (max-width: 992px) {
+  .traditional-cuisine {
+    min-height: auto;
+}
+  .cuisine-img-left img {
+    display: none;
+  }
+  .cuisine-img-right img {
+    display: none;
+  }
+  .cuisine-text p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) { 
+  .cuisine-list li {
+    padding: 0 14px;
+  }
+}
+/*-------------------- Traditional Cuisine Section Ends Here --------------------*/
+
+/*-------------------- Discover Our New Menu Section Starts Here --------------------*/
+.discover {
+  background-image: url(../img/discover-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 16%;
+}
+.menu-bg {
+  background-color: #ffffffc7;
+  width: 100%
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu-text {
+  margin-left: 5px;
+  width: 60%;
+}
+.menu-heading h2 {
+  color: var(--heading-color);
+  margin-bottom: 25px;
+}
+.menu-text h4 {
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 480px) {
+  .menu-text {
+    width: 80%;
+  }
+  .discover {
+    padding-top: 46%;
+}
+}
+/*-------------------- Discover Our New Menu Section Ends Here --------------------*/
+
+/*-------------------- Just Background 1 & 2 Section Starts Here --------------------*/
+.img-fluid {
+  width: 100%;
+}
+/*-------------------- Just Background 1 & 2 Section Ends Here --------------------*/
+
+/*-------------------- Book Here Section Starts Here --------------------*/
+.bookhere {
+  background-color: var(--circlebg);
+}
+.form-label {
+  color: #fff;
+}
+.form-control, .form-select {
+  color: #fff;
+  background-color: transparent;
+  width: 70%;
+}
+.form-control::placeholder {
+  color: #fff;
+}
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+@media screen and (max-width: 767px) {
+  .form-control, .form-select {
+    width: 100%;
+  }
+}
+/*-------------------- Book Here Section Ends Here --------------------*/
+
+/*-------------------- Menu Card Section Starts Here --------------------*/
+.menu-card {
+  background-color:  var(--light-background);
+  padding-bottom: 30px;
+}
+.menu-cardheading h2 {
+  color: var(--heading-color);
+  margin-bottom: 25px;
+}
+.card-body a {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 5px solid orange;
+}
+/*-------------------- Menu Card Section Ends Here --------------------*/
+
+/*-------------------- Testimonial Section Start Here --------------------*/
+.testimonial-bg {
+  background-color: var(--circlebg);
+}
+.testimonial-text p {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.testimonial-text li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.testimonial-text ul {
+  padding-left: 0px;
+}
+@media screen and (max-width: 767px) {
+  .testimonial-text p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .testimonial-text li {
+    padding: 0px 6px;
+  }  
+  .testimonial-text img {
+    width: 80%;
+  }
+}
+
+/*-------------------- Testimonial Section Ends Here --------------------*/
+
+/*-------------------- Footer Section Starts Here --------------------*/
+footer {
+  background-color:  var(--light-background);
+}
+.footer-text p {
+  width: 60%;
+}
+.footer-list ul {
+  padding-left: 0px;
+}
+.footer-list li {
+  list-style: none;
+}
+.footer-list a {
+  text-decoration: none;
+  color: #2d2f2a;
+  font-weight: 700;
+}
+@media screen and (max-width: 480px) {
+  .footer-text p {
+    width: 100%;
+  }
+}
+/*-------------------- Footer Section Ends Here --------------------*/
+
+/*-------------------- Back To Top Section Starts Here --------------------*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9;
+  font-size: 18;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: red;
+}
+#myBtn:hover {
+  background-color: green;
+}
+#myBtn:active {
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+}
+/*-------------------- Back To Top Section Ends Here --------------------*/
+
